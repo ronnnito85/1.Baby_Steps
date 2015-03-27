@@ -1,0 +1,14 @@
+def begin_function(number):
+
+    square = number**2
+
+    return square
+
+    
+
+
+n = input("enter the number: ")
+n = int(n)
+
+print("The square of number %d is" % n,begin_function(n))
+
