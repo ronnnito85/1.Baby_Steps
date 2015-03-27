@@ -1,0 +1,25 @@
+def grades_that_pass(list1,list2,limit):
+
+    count = 0
+    n = len(list1)
+    new_list = []
+
+    if len(list1)!= len(list2):
+        return Error
+    else:
+        for i in range(0,n):
+            if list2[i]>=limit:
+                new_list+=[list1[i]]
+            
+
+        return new_list
+
+
+students = ["Rado", "Ivo", "Maria", "Nina"]
+grades = [3, 4.5, 5.5, 6]
+
+n= input("Enter the limt: ")
+n = float(n)
+
+print("The students with good result from exam are: ",
+      grades_that_pass(students,grades,n))
