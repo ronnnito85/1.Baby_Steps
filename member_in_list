@@ -1,0 +1,16 @@
+def count(items):
+
+    count = 0
+
+    for i in items:
+        count += 1
+
+    return count
+
+    
+
+
+
+list = [5,6,4,7,8,9]
+
+print("The count of number in list is" ,count(list))
