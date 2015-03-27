@@ -1,0 +1,23 @@
+def count(items,num):
+
+    n = len(items)
+    count = 0
+    flag = False
+    
+    while count<n:
+        if items[count]==num:
+            flag = True
+            break
+      
+        count +=1
+        
+    return flag
+
+
+list = [5,6,4,7,8,9]
+
+number =input("Enter the find number: ")
+number = int(number)
+
+
+print("Is the nmuber of %d in the list: "%number ,count(list,number))
